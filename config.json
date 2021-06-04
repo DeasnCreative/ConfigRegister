@@ -1,0 +1,26 @@
+{
+ "BotToken": "ODAyOTQ4Mjg3ODE1NzQ1NTM2.YA2p3Q.r-uYcG-RRei9Y7csCYu2WjstzIY",
+ "BotPrefix": ".",
+ "BotBio": "Deasn was here?",
+
+ "GuildID": "850456906555195413",
+
+ "RulesChannel": "850462550272507924",
+ "WelcomeChannel": "850461969378312264",
+ "LogChannel": "850463788012797952",
+ "JoinChannel": "850463693238042644",
+ "ChatChannel": "850463208280162385",
+
+ "UnregisteredRole": "850461528091262976",
+ "CrewRole": "850461612535316480",
+ "RegistererRole": "850461302965927966",
+ "JailedRole": "850461294468530187",
+ "BoosterRole": "850461759643189268",
+
+ "WomanRole1": "850461303880941638",
+ "WomanRole2": "850461304082006086",
+ "ManRole1": "850461303524425750",
+ "ManRole2": "850461303553785886",
+
+ "SymbolTag": "✯"
+}
