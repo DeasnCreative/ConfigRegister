@@ -13,19 +13,24 @@ exports.run = async (client, message, args) => {
 
  let log = config.LogChannel;
 
-     const kanal = message.guild.channels.cache.find(log);
   let embed = new Discord.MessageEmbed() 
   .setColor("RANDOM")
   .setTimestamp()
   .addField(`Kayıtsıza atma işlemi başarılı!`, `${member} **üyesi,** ${message.author} **tarafından kayıtsıza atıldı!**`) 
   .setFooter(`Komutu Kullanan Yetkili: ${message.author.username}` ,message.author.avatarURL({dynamic: true }))
-  const embed1 = new Discord.MessageEmbed() 
-  return message.channel.send(embed) .then(kanal.send(embed1)).then(m => m.delete({timeout: 20000}));
+   message.channel.send(embed);
+
+   let embed2 = new Discord.MessageEmbed()
+  .setColor("RANDOM")
+  .setTimestamp()
+  .addField(`Kayıtsıza atma işlemi başarılı!`, `${member} **üyesi,** ${message.author} **tarafından kayıtsıza atıldı!**`) 
+  .setFooter(`Komutu Kullanan Yetkili: ${message.author.username}` ,message.author.avatarURL({dynamic: true }))
+  client.channels.cache.get(log).send(embed2);
 }
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ["kayıtsız" , "kayıtsız"],
+  aliases: ["kayıtsız" , "kayıtsız", "unregister", "unr"],
   permLevel: 0
 }
 exports.help = {
